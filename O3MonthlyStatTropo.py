@@ -20,7 +20,7 @@ Day  = lambda x: x.day
 YearMonth = lambda x: (x.year, x.month)
 
 
-O3Mask = r'd:\disks\1TB\#data#\#LIDAR#\#ozone#\O3ProcessedData\b*.nc'
+O3Mask = r'd:\disks\1TB\#data#\#LIDAR#\#ozone#\O3ProcessedData\b*tropo.nc'
 
 FO3 = ncdf.MFDataset(O3Mask)
 ncTime = ncdf.MFTime(FO3.variables['Time'])
